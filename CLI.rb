@@ -26,4 +26,4 @@ class BaliHotelFinder::CLI
 
     input = gets.strip.downcase
     if input == "y"
-  
+      
