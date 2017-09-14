@@ -26,35 +26,4 @@ class BaliHotelFinder::CLI
 
     input = gets.strip.downcase
     if input == "y"
-      start
-    else
-      puts ""
-      puts "Thank you! Come back again for updated prices and deals"
-      exit
-    end
-  end
-
-  def print_hotels(hotel)
-    puts ""
-    puts " #{hotel.name} - #{hotel.location} "
-    puts ""
-    puts "Location:           #{hotel.location}"
-    puts "Contact:            #{hotel.contact}"
-    puts "Website:            #{hotel.website_url}"
-    puts ""
-    puts "-Description-"
-    puts ""
-    puts "#{hotel.description}"
-    puts ""
-  end
-
-  def print_hotels(from_number)
-    puts ""
-    puts "---------- Hotels #{from_number} - #{from_number+9} ----------"
-    puts ""
-    BaliHotelFinder::Hotels.all[from_number-1, 10].each.with_index(from_number) do |hotel, index|
-      puts "#{index}. #{hotel.name} - #{hotel.location}"
-    end
-  end
-
-end
+  
