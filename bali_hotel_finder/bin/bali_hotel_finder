@@ -1,1 +1,7 @@
-puts "Hello World"
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "./lib/bali_hotel_finder"
+
+
+BaliHotelFinder::CLI.new.call

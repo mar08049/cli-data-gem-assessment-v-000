@@ -1,5 +1,5 @@
-require "bali_hotel_finder/version"
-
-module BaliHotelFinder
-  # Your code goes here...
-end
+require "nokogiri"
+require "open-uri"
+require_relative "./bali_hotel_finder/version"
+require_relative "./bali_hotel_finder/hotel"
+require_relative "./bali_hotel_finder/CLI"
